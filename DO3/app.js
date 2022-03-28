@@ -89,8 +89,65 @@ let role = prompt("User role");
 /**------- ONE ----------*/
 //Write a JavaScript program that accept two integers and display the larger.
 
+function integer(a,b){
+  if(a>=0 && b>=0)
+{
+  if(a!=b)
+  {
+    alert("The larger number is " + Math.max(a,b));
+  } else{
+    alert("Both numbers are equal!")
+  }
+} else{
+  alert("Please add an integer!");
+ }  
+}
+integer(-1,-1);
+
 /**------- TWO ----------*/
 //Write a javascript program to process loans based on the following scenarios
 //1. an applicant is eligible for a loan if they have a good credit score and high income
 //2. an applicant is eligible for a loan if they have a good credit and do not have a criminal record
 //3. an applicant is eligible for a loan if they have a good credit score or high income
+
+
+
+
+
+//1
+
+let score1 = "good";
+let income1 = "high";
+
+let score1Input = prompt("What is your score?");
+  if (score1Input == score1){
+    alert("Proceed to enter income");
+  }
+  let income1Input = prompt("What is your income?");
+  if (income1Input == income1){
+    alert("You qualify for a loan");
+  }
+
+
+
+
+//2
+
+let score  = "good";
+let crimeRecord = "no";
+
+let scoreInput = Prompt("What is your credit score?");
+
+if (scoreInput == score) {
+    alert("credit good,What is your crimeRecord?")
+}
+
+  let crimeRecordInput = Prompt("Do you have a crime record?");
+    if (crimeRecordInput == crimeRecord) {
+    alert("You qualify for this loan");
+  }
+else {
+  alert("Bad credit You do not qualify");
+}
+
+//3
